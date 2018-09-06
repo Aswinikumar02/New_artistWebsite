@@ -1,0 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.appBarLeftMenuItem{
+  font-family: 'Arizonia', cursive;
+  font-size: 27px;
+    color:white;
+}
+.appBarRightMenuItem
+{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 22px;
+}
+
+.appBarMenuItem:hover
+{
+  color:red !important;
+}
+.ui.secondary.pointing.menu{
+  margin-left: 0;
+    margin-right: 0;
+    border-bottom: 2px solid rgba(255,255,255,0);
+}
+.textcolor{
+  color: rgba(0,0,0,.68);
+}
