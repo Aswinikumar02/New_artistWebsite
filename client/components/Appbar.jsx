@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Menu, Segment} from 'semantic-ui-react';
+import {Menu, Segment, Image} from 'semantic-ui-react';
 import {Modal, Button} from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
@@ -15,15 +15,17 @@ export default class AppBar extends React.Component
   render()
   {
     return (
-      <div style={{overflow:'hidden'}}>
-        <Menu pointing secondary size='massive' style={{height:'13vh'}}>
+      <div>
+        <Menu pointing secondary size='massive' style={{height:'15vh'}}>
           <Link to='/'>
-          <Menu.Item name='gatefineatrs' className='appBarLeftMenuItem' style={{color:'black',marginBottom:'-10px',marginLeft:'40px'}}>Gate Fine <br/>Arts Studio</Menu.Item>
+          <Menu.Item className='appBarLeftMenuItem' style={{color:'black',marginBottom:'0px',marginLeft:'90px',marginTop:'-7px',position:'relative',zIndex:1}}>
+            <Image src='./client/Images/logo web.png' size='tiny'/>
+          </Menu.Item>
           </Link>
           <Menu.Menu position='right' style={{
-            marginRight: "55px",
-            marginBottom:'10px',
-            marginTop:'2.5%'
+            marginTop:'1%',
+            // marginLeft:'20%',
+            marginRight:'10%'
           }}>
           <Link to='/'>
             <Menu.Item name='home' className='appBarRightMenuItem' style={{color:'black'}}/>
@@ -32,7 +34,7 @@ export default class AppBar extends React.Component
               <Menu.Item name='gallery' className='appBarRightMenuItem' style={{color:'black'}} />
             </Link>
             <Link to='/corporate'>
-              <Menu.Item name='corporate work' className='appBarRightMenuItem' style={{color:'black'}}/>
+              <Menu.Item name='clients' className='appBarRightMenuItem' style={{color:'black'}}/>
             </Link>
             <Link to='/contactus'>
               <Menu.Item name='contact us' className='appBarRightMenuItem' style={{color:'black'}}/>

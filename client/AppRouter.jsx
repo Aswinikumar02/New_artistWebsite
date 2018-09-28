@@ -4,6 +4,7 @@ import Home from "./components/Home.jsx";
 import Gallery from './components/Gallery.jsx';
 import CorporateWork from './components/CorporateWork.jsx';
 import ContactUs from './components/ContactUs.jsx';
+
 export default class AppRouter extends Component {
   constructor(props) {
     super(props);

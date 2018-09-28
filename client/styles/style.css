@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif !important;
+  background-color: #f4f4f4;
 }
 
 .appBarLeftMenuItem{
@@ -24,4 +25,12 @@ body {
 }
 .textcolor{
   color: rgba(0,0,0,.68);
+}
+#closeIconPosition {
+  position: absolute;
+  float: right;
+  margin-top: -5%;
+  color: orange;
+  margin-left: 100%;
+  cursor:pointer;
 }
